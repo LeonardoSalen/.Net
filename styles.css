@@ -1,0 +1,148 @@
+:root {
+    --clr-light: rgba(250, 250, 250, 0.5);
+    --clr-dark: #000;
+    --clr-slightdark: rgba(42, 42, 53, 0.5);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    box-sizing: 0;
+}
+
+
+/* Main Section */
+
+h1 {
+    background-color: var(--clr-slightdark);
+    width: 10em;
+    border-radius: 25px;
+    text-align: center;
+    align-self: center;
+    color: white;
+    font-size: 8vw;
+    position: absolute;
+    margin-top: 25%;
+}
+
+h1 {
+    width: 17.7ch;
+    animation: typing 4.5s steps(16), blink .4s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+h1:hover {
+    background-color: rgb(42, 42, 53);
+    transition: 1s;
+    box-shadow: -10px 10px var(--clr-slightdark);
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    75% {
+        border-color: transparent
+    }
+}
+
+address {
+    border-radius: 30px;
+    align-self: center;
+    position: absolute;
+    margin-top: 37%;
+    background-color: var(--clr-light);
+    color: black;
+    width: clamp(65%, 80%, 85%);
+    font-size: clamp(15px, 2vw, 2em);
+    text-align: center;
+}
+
+address p {
+    margin: 1px 0px -5px 0px;
+}
+
+address a {
+    text-decoration: none;
+    color: black;
+    font-size: clamp(15px, 2vw, 2em);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+svg:first-child {
+    position: absolute;
+    margin: 7px 0px 0px -7em;
+}
+
+svg {
+    margin-top: 2.5px;
+}
+
+address:hover {
+    background-color: white;
+    box-shadow: -5px 10px rgba(250, 250, 250, 0.5);
+    transition: 1s;
+}
+
+
+/* Schedule */
+
+th {
+    border: 2px solid black;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 3em;
+}
+
+th:hover {
+    background-color: blue;
+}
+
+td {
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+tbody {
+    text-align: center;
+}
+
+@media only screen and (width:1280px) {
+    svg:first-child {
+        position: absolute;
+        margin: 3px 0px 0px -7.2em;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    svg:first-child {
+        position: absolute;
+        margin: 0px 0px 0px -7.55em;
+    }
+    h1:hover {
+        background-color: var(--clr-slightdark);
+        box-shadow: 0px 0px;
+    }
+    address:hover {
+        background-color: var(--clr-light);
+        box-shadow: 0px 0px;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    svg:first-child {
+        position: absolute;
+        margin: 5px 0px 0px -7.2em;
+    }
+}
